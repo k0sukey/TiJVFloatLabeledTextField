@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.1
+apiversion: 2
+description: My module
+author: Your Name
+license: Specify your license
+copyright: Copyright (c) 2014 by Your Company
+
+
+# these should not be edited
+name: TiJVFloatLabeledTextField
+moduleid: be.k0suke.tijvfloatlabeledtextfield
+guid: 6759fd13-9a84-4140-a4fb-b25be82e7c07
+platform: iphone
+minsdk: 3.2.0.GA
