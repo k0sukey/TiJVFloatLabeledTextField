@@ -10,4 +10,6 @@
 
 }
 
+-(void)noteValueChange:(NSString *)args;
+
 @end

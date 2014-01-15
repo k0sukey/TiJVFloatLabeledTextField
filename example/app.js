@@ -30,13 +30,12 @@ var textfield = TiJVFloatLabeledTextField.createTextField({
 	},
 	hintColor: '#ccc',
 	activeHintColor: '#f00',
-	passwordMask: true,
 	clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ONFOCUS
 });
 win.add(textfield);
 
-textfield.addEventListener('change', function(){
-	console.log('change');
+textfield.addEventListener('change', function(e){
+	console.log(e);
 });
 
 var textarea = TiJVFloatLabeledTextField.createTextArea({
@@ -44,13 +43,20 @@ var textarea = TiJVFloatLabeledTextField.createTextArea({
 	left: 10,
 	width: 300,
 	height: 200,
+	value: 'default value',
 	font: {
 		fontSize: 16
 	},
 	color: '#333',
-	hintText: 'textarea',
+	hintText: 'here is textarea',
 	hintFont: {
 		fontSize: 12
-	}
+	},
+	hintColor: '#ccc',
+	activeHintColor: '#f00'
 });
 win.add(textarea);
+
+textarea.addEventListener('change', function(e){
+	console.log(e);
+});

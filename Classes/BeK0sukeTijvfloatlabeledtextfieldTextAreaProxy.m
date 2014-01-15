@@ -10,6 +10,35 @@
 
 @implementation BeK0sukeTijvfloatlabeledtextfieldTextAreaProxy
 
+-(void)blur:(id)args
+{
+    ENSURE_UI_THREAD_1_ARG(args);
+    
+    if ([self viewAttached])
+    {
+        [[[[self view] subviews] objectAtIndex:0] resignFirstResponder];
+    }
+}
 
+-(void)focus:(id)args
+{
+    ENSURE_UI_THREAD_1_ARG(args);
+    
+    if ([self viewAttached])
+    {
+        [[[[self view] subviews] objectAtIndex:0] becomeFirstResponder];
+    }
+}
+
+-(void)noteValueChange:(NSString *)args
+{
+    if (![[self valueForKey:@"value"] isEqual:args])
+    {
+        [self replaceValue:args forKey:@"value" notification:NO];
+        [self contentsWillChange];
+        [self fireEvent:@"change"
+             withObject:[NSDictionary dictionaryWithObject:args forKey:@"value"]];
+    }
+}
 
 @end

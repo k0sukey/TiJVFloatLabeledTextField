@@ -6,7 +6,7 @@
  */
 #import "TiUIView.h"
 
-@interface BeK0sukeTijvfloatlabeledtextfieldTextArea : TiUIView<UITextFieldDelegate> {
+@interface BeK0sukeTijvfloatlabeledtextfieldTextArea : TiUIView<UITextViewDelegate> {
 
 }
 
