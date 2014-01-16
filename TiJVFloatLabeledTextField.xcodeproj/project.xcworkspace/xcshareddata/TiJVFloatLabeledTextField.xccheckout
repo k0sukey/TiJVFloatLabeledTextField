@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3CCC432D-B039-4CD4-94FE-9721805FAA58</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TiJVFloatLabeledTextField</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0430F001-A289-4289-B14B-B3DED56FF7B6</key>
+		<string>ssh://github.com/k0sukey/TiJVFloatLabeledTextField.git</string>
+		<key>EEDAC7C6-B344-4E3E-9CE7-8B518DA532BE</key>
+		<string>https://github.com/jverdi/JVFloatLabeledTextField</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TiJVFloatLabeledTextField.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0430F001-A289-4289-B14B-B3DED56FF7B6</key>
+		<string>../..</string>
+		<key>EEDAC7C6-B344-4E3E-9CE7-8B518DA532BE</key>
+		<string>../../JVFloatLabeledTextField</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/k0sukey/TiJVFloatLabeledTextField.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0430F001-A289-4289-B14B-B3DED56FF7B6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EEDAC7C6-B344-4E3E-9CE7-8B518DA532BE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JVFloatLabeledTextField</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0430F001-A289-4289-B14B-B3DED56FF7B6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TiJVFloatLabeledTextField</string>
+		</dict>
+	</array>
+</dict>
+</plist>
