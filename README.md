@@ -68,6 +68,8 @@ Compatible Ti.UI.TextField, Ti.UI.TextArea.
 * hintFont
 * hintColor
 * activeHintColor
+* paddingLeft / TextField only
+* paddingRight / TextField only
 
 ### Events
 

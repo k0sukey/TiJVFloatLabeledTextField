@@ -23,6 +23,8 @@ var titlefield = TiJVFloatLabeledTextField.createTextField({
 	left: 16,
 	width: Ti.UI.FILL,
 	height: 44,
+	leftPadding: 10,
+	rightPadding: 10,
 	font: {
 		fontSize: 16
 	},

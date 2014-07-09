@@ -18,6 +18,8 @@
     if (self)
     {
         JVFloatLabeledTextField *textfield = [[JVFloatLabeledTextField alloc] initWithFrame:CGRectZero];
+        textfield.leftViewMode = UITextFieldViewModeAlways;
+        textfield.rightViewMode = UITextFieldViewModeAlways;
         textfield.delegate = self;
         [self addSubview:textfield];
         
@@ -143,6 +145,40 @@
 {
     JVFloatLabeledTextField *tf = [[self subviews] objectAtIndex:0];
     [tf setFloatingLabelActiveTextColor:[[TiUtils colorValue:args] color]];
+}
+
+-(void)setLeftPadding_:(id)args
+{
+    JVFloatLabeledTextField *tf = [[self subviews] objectAtIndex:0];
+    CGRect frame = tf.floatingLabel.frame;
+    frame.origin.x = [TiUtils floatValue:args def:.0f];
+    [tf.floatingLabel setFrame:frame];
+    
+    if (tf.leftView)
+    {
+        [tf.leftView setFrame:CGRectMake(0, 0, [TiUtils floatValue:args def:.0f], 10)];
+    }
+    else
+    {
+        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [TiUtils floatValue:args def:.0f], 10)];
+        [view setBackgroundColor:[UIColor clearColor]];
+        [tf setLeftView:view];
+    }
+}
+
+-(void)setRightPadding_:(id)args
+{
+    JVFloatLabeledTextField *tf = [[self subviews] objectAtIndex:0];
+    if (tf.rightView)
+    {
+        [tf.rightView setFrame:CGRectMake(0, 0, [TiUtils floatValue:args def:.0f], 10)];
+    }
+    else
+    {
+        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [TiUtils floatValue:args def:.0f], 10)];
+        [view setBackgroundColor:[UIColor clearColor]];
+        [tf setRightView:view];
+    }
 }
 
 -(void)textFieldDidChange:(NSNotification *)notification
